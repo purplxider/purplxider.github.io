@@ -16,14 +16,48 @@ header {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/*헤더A: 로고*/
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*헤더: 로고*/
 .logo {
     display: inline-block;
     height: 70px;
+    margin-top: 15px;
     padding-left: 0;
     padding-right: 0;
     background-color: #fff;
     color: #000;
+}
+
+/*헤더: 메뉴*/
+.mainMenu {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.mainMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.mainMenu a {
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.mainMenu a:hover{
+    background-color: rgba(0,0,0,0.3);
 }
 
 /*페이지 전체*/
@@ -51,6 +85,7 @@ body {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 15vw;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 @media (min-width:768px) {
@@ -63,7 +98,6 @@ body {
 .banner p {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
 }
 
@@ -117,7 +151,6 @@ body {
 .introduction h2{
     margin-top: 0;
     margin-bottom: 10px;
-    font-family: 'Alata', sans-serif;
     font-size: 20px;
 }
 
@@ -175,19 +208,20 @@ footer .container {
 
 /*푸터: 사이트정보*/
 .info {
+    font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 30px;
 }
 
 .info h2 {
     margin-top:0;
     margin-bottom: 10px;
-    font-family: 'Alata', sans-serif;
     font-size: 30px;
 }
 
 .info p {
     margin-top: 0;
     margin-bottom: 0;
+    font-family: 'Alata', sans-serif;
     font-size: 14px;
 }
 
