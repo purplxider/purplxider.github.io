@@ -9,7 +9,6 @@
 
 /*헤더*/
 header {
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
@@ -17,8 +16,8 @@ header {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/*헤더A: 사이트 이름*/
-.headA {
+/*헤더A: 로고*/
+.logo {
     display: inline-block;
     height: 70px;
     padding-left: 0;
