@@ -54,12 +54,24 @@ body {
     font-size: 15vw;
 }
 
+@media (min-width:768px) {
+    .banner h1 {
+        font-size: 115px;
+    }
+}
+
 /*메인배너 소개글*/
 .banner p {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
+}
+
+@media (min-width:768px) {
+    .banner p {
+        font-size: 24px;
+    }
 }
 
 /*메인배너 링크*/
@@ -142,14 +154,142 @@ body {
     color: #fff;
 }
 
+/*푸터*/
+footer {
+    color: #fff;
+    background-color: #a3a3a3;
+}
 
+footer .container {
+    padding: 40px 20px;
+}
 
 @media (min-width:768px) {
-    .banner h1 {
-        font-size: 115px;
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*푸터: 사이트정보*/
+.info {
+    margin-bottom: 30px;
+}
+
+.info h2 {
+    margin-top:0;
+    margin-bottom: 10px;
+    font-family: 'Alata', sans-serif;
+    font-size: 30px;
+}
+
+.info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+@media (min-width:768px) {
+    .info {
+        flex: 0 0 30%;
+    }
+}
+
+/*푸터: 푸터 메뉴*/
+.footMenu {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media (min-width:768px) {
+    .footMenu {
+        display: flex;
+        flex: 0 0 70%;
+    }
+}
+
+.footMenu div {
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+    .footMenu div {
+        flex:1;
     }
     
-    .banner p {
-        font-size: 24px;
+    .footMenu div:not(:first-child) {
+        margin-left: 20px;
     }
+}
+
+.footMenu h3 {
+    margin-top:0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+}
+
+.footMenu ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.footMenu a {
+    display: block;
+    padding: 1px;
+    color:inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footMenu a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+/*푸터: 저작권*/
+.copyright {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+
+@media (min-width:768px) {
+    .copyright {
+        flex: 0 0 100%;
+    }
+}
+
+/*푸터: SNS*/
+.sns {
+    margin-top: 20px;
+}
+
+.sns ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sns a {
+    display: block;
+    margin-right: 8px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.sns a:hover {
+    background-color: rgba(0,0,0,0.3);
 }
