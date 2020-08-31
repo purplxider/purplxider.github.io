@@ -17,7 +17,6 @@ header {
 }
 
 header .container {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1000px;
@@ -36,6 +35,44 @@ header .container {
     color: #000;
 }
 
+/*헤더: 토글버튼*/
+.toggle {
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 28px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    opacity: 0.19;
+}
+
+@media (max-width: 767px) {
+    .mainMenu {
+        display:none;
+    }
+    
+    header .container-small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .mainMenu {
+        display: block !important;
+    }
+    
+    .toggle {
+        display: none;
+    }
+}
+
 /*헤더: 메뉴*/
 .mainMenu {
     font-family: 'Noto Sans KR', sans-serif;
@@ -45,7 +82,6 @@ header .container {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
 }
 
 .mainMenu a {
@@ -58,6 +94,21 @@ header .container {
 
 .mainMenu a:hover{
     background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width: 768px){
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mainMenu ul {
+        display: flex;
+    }
 }
 
 /*페이지 전체*/

@@ -19,14 +19,28 @@
         }
     </style>
     <script src="https://kit.fontawesome.com/886e1f55b1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function(){
+        $(".toggle").click(function(){
+            $(".mainMenu").slideToggle();
+        })
+    })
+    </script>
 </head>
     
 <body>
     <header>
     <div class="container">
-        <a href="index.html" class="logo">
-            <img src="img/logoa.png" height="49px" width="168px"/>
-        </a>
+        <div class="container-small">
+            <a href="index.html" class="logo">
+                <img src="img/logoa.png" height="49px" width="168px"/>
+            </a>
+
+            <button type="button" class="toggle">
+                <span class="fa fa-bars" title="MENU"></span>    
+            </button>
+        </div>
         
     <nav class="mainMenu">
         <ul>
@@ -91,7 +105,7 @@
                     </span>
                 </a></li>
             </ul>
-        </nav>    
+        </nav>
             
         </div>
         
