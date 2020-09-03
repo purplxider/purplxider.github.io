@@ -25,6 +25,12 @@
         $(".toggle").click(function(){
             $(".mainMenu").slideToggle();
         })
+        $(".about").click(function(){
+            $(".aboutMenu").slideToggle();
+        })
+        $(".archive").click(function(){
+            $(".archiveMenu").slideToggle();
+        })
     })
     </script>
 </head>
@@ -44,9 +50,27 @@
         
     <nav class="mainMenu">
         <ul>
-            <li><a href="about.html">소개</a></li>
+            <!-- 드롭다운 위치를 위한 div -->
+            <div class="aboutDropdown">
+            <li><button type="button" class="about">소개</button></li>
+            <!-- 드롭다운 내용이 담긴 div -->
+            <div class="aboutMenu">
+                <a href="about.html">소개</a>
+                <a href="timeline.html">연혁</a>
+            </div>
+            </div>
             <li><a href="notice.html">공지</a></li>
-            <li><a href="archive.html">아카이빙</a></li>
+            <!-- 드롭다운 위치를 위한 div -->
+            <div class="archiveDropdown">
+            <li><button type="button" class="archive">아카이브</button></li>
+            <!-- 드롭다운 내용이 담긴 div -->
+            <div class="archiveMenu">
+                <a href="2020_1.html">2020 1학기</a>
+                <a href="2020_summer.html">2020 여름학기</a>
+                <a href="eco.html">생태동아리</a>
+                <a href="movie.html">영화동아리</a>
+            </div>
+            </div>
             <li><a href="photo.html">사진</a></li>
             <li><a href="contact.html">문의</a></li>
             <li><a href="donations.html">후원</a></li>
@@ -126,7 +150,7 @@
     </div>
         
      <div>
-        <h3>아카이빙</h3>
+        <h3>아카이브</h3>
         <ul>
             <li><a href=#>2020 1학기</a></li>
             <li><a href=#>2020 여름학기</a></li>
