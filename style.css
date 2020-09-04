@@ -34,7 +34,7 @@ header {
     left: 0;
     z-index: 100;
     width: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Alata', sans-serif;
     border-bottom: solid 1px #ddd;
 }
 
@@ -49,12 +49,13 @@ header .container {
 /*헤더: 로고*/
 .logo {
     display: inline-block;
-    height: 70px;
-    margin-top: 17px;
-    padding-left: 0;
-    padding-right: 0;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #fff;
     color: #000;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 /*헤더: 토글버튼*/
@@ -235,7 +236,7 @@ body {
     justify-content: center;
     height: 100vh;
     min-height: 450px;
-    background-image: url(img/blackboard.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/blackboard.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
