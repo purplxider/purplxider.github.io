@@ -215,7 +215,7 @@ body {
     justify-content: center;
     height: 100vh;
     min-height: 450px;
-    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/blackboard.jpg);
+    background-color: #222;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -254,9 +254,9 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 30px;
-    border: solid 3px currentColor;
+    border: solid 1.5px currentColor;
     border-radius: 6px;
-    background-color: #a6c9ff;
+    background-color: #5E74E8;
     color: #fff;
     font-size: 14px;
     text-decoration: none;
@@ -295,6 +295,12 @@ body {
     font-size: 40px;
 }
 
+.introduction h3 {
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
 /*소개 내용*/
 .introduction p {
     margin-top: 20px;
@@ -323,12 +329,12 @@ body {
     line-height: 2em;
     border-radius: 50%;
     text-align: center;
-    background-color: #a6c9ff;
+    background-color: #5E74E8;
     color: #fff;
 }
 
 .introduction img {
-    margin-top: 20px;
+    margin-top: 0;
     max-width: 50%;
 }
 
@@ -385,7 +391,7 @@ body {
 /*푸터*/
 footer {
     color: #fff;
-    background-color: #a3a3a3;
+    background-color: #222;
 }
 
 footer .container {
