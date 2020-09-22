@@ -84,13 +84,6 @@ header .container {
         border-top: solid 1px rgba(0,0,0,0.1);
     }
     
-    /*작은 화면일 경우 slideToggle을 그대로 활용*/
-    .aboutMenu {
-        display: none;
-        background-color: rgba(0,0,0,0.07);
-        color: rgba(0,0,0,0.7);
-    }
-    
     .archiveMenu {
         display: none;
         background-color: rgba(0,0,0,0.07);
@@ -109,23 +102,9 @@ header .container {
         display: block !important;
     }
     
-    /*큰 화면일 경우 드롭다운 위치를 선정*/
-    .aboutDropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
     .archiveDropdown {
         position: relative;
         display: inline-block;
-    }
-    /*큰 화면일 경우 드롭다운 상자를 말풍선처럼 표시*/
-    .aboutMenu{
-        display: none;
-        position: absolute;
-        min-width: 60px;
-        background-color: white;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
     
     .archiveMenu{
